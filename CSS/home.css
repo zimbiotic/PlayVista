@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+/* hero section */
+
+.hero{
+    background-image: url(../Images/homebg.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    height:55vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    position: relative;
+}
