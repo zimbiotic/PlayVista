@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">      
-        <title>PlayVista - Home</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://kit.fontawesome.com/40d5bdbdec.js" crossorigin="anonymous"></script>
-        <link href="css/main.css" rel="stylesheet">
-        <link href="css/home.css" rel="stylesheet">
+<head>
+    <meta charset="utf-8">
+    <title>PlayVista - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/40d5bdbdec.js" crossorigin="anonymous"></script>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
 
 
 </head>
@@ -21,8 +21,21 @@
 
         <div class="header-mid">
 
-            <div class="mobile-icon"><i class="fa-solid fa-bars"></i></div>
-            
+            <div class="mobile-icon">
+                <div class="hamburger_menu_container">
+                    <input id="menu_icon_button" type="checkbox">
+                    <i class="fa-solid fa-bars menu_icon"></i>
+                    <div class="menu_container">
+                        <ul class="menu">
+                            <li><a href="#" class="nav-btn-link menu_item">New arrivals</a></li>
+                            <li><a href="#" class="nav-btn-link menu_item">Sale</a></li>
+                            <li><a href="#" class="nav-btn-link menu_item">Games</a></li>
+                            <li><a href="#" class="nav-btn-link menu_item">Hardware</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
             <div class="logo">
                 <a href="index.html"><img src="images/s-logo.jpeg" alt="PV logo"></a>
             </div>
@@ -33,14 +46,14 @@
             </div>
 
             <div class="sign-cart">
-             
+
                 <a href="page/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
                 <a href="#"><i class="fa-solid fa-user"></i></a>
             </div>
 
-            
 
-            
+
+
         </div>
 
         <div class="header-bot">
@@ -49,12 +62,12 @@
                     <li><a href="#" class="nav-btn-link">New arrivals</a></li>
                     <li><a href="#" class="nav-btn-link">Sale</a></li>
                     <li><a href="#" class="nav-btn-link">Games</a></li>
-                    <li><a href="#" class="nav-btn-link" >Hardware</a></li>
+                    <li><a href="#" class="nav-btn-link">Hardware</a></li>
 
                 </ul>
             </nav>
 
-            
+
         </div>
 
     </header>
@@ -64,6 +77,9 @@
             <a href="#" class="btn-link">SHOP NOW</a>
         </div>
     </main>
+    <footer>
+        <a class="nav-btn-link" href="guide.html" target="_blank">Style Guide</a>
+    </footer>
+</body>
 
-</body> 
 </html>
