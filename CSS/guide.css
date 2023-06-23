@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -6,31 +6,32 @@
 
 
 
-body {  /* change the fonts */
+body {
+  /* change the fonts */
   font-family: "Rajdhani";
   padding: 2rem;
-  color:#001c55;
+  color: #001c55;
 }
 
-.element {  
+.element {
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-top-width: 0.15rem;
   border-top-style: solid;
   border-top-color: black;
- 
+
 
 }
 
 /* intext link-------- */
 
-.element-intext {  
+.element-intext {
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-top-width: 0.15rem;
   border-top-style: solid;
   border-top-color: black;
- 
+
 
 }
 
@@ -38,22 +39,22 @@ body {  /* change the fonts */
 
 
 
-.element-intext a{  
+.element-intext a {
   text-decoration: none;
 
 }
 
 .element-intext a:hover {
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 
 
-@media screen and (max-width:600px){
-  
+@media screen and (max-width:600px) {
 
-  .button-nav{
-    display:block;
-    max-width:fit-content;
+
+  .button-nav {
+    display: block;
+    max-width: fit-content;
     padding: 3rem;
   }
 }
@@ -61,7 +62,8 @@ body {  /* change the fonts */
 
 
 
-section{ /* add space between section */
+section {
+  /* add space between section */
   margin-top: 6rem;
 }
 
@@ -97,54 +99,56 @@ h5 {
 
 /* paragraph-------- */
 
-.element-para {  
+.element-para {
   padding-top: 2rem;
   padding-bottom: 2rem;
   border-top-width: 0.15rem;
   border-top-style: solid;
   border-top-color: black;
 
- 
- 
+
+
 
 }
 
-.element-para p{ 
-margin-left: 60px;
-margin-right: 60px;
-max-width:90%;
+.element-para p {
+  margin-left: 60px;
+  margin-right: 60px;
+  max-width: 90%;
 
 }
 
 /* list------- */
 
 
-.element-list {  
+.element-list {
   padding-top: 2rem;
   padding-bottom: 2rem;
   border-top-width: 0.15rem;
   border-top-style: solid;
   border-top-color: black;
- 
+
 
 }
 
-.element-list li{
+.element-list li {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
 
 
-p { /*Shorten the default width */
-    
-  
+p {
+  /*Shorten the default width */
+
+
   margin-top: 0;
-  color:#001c55;
-  
+  color: #001c55;
+
 }
 
-nav a:hover, nav a:focus {
+nav a:hover,
+nav a:focus {
   text-decoration: none;
 }
 
@@ -162,13 +166,13 @@ code {
 /* Styling for the navigation button */
 .button-nav {
   margin: 0 2rem;
-text-decoration: none;
-color:#001c55;
-padding: 0.3rem;
-transition:color 1s;
-transition:background-color 1s;
-border-radius: 3px;
-background-color:#dbe7f1;
+  text-decoration: none;
+  color: #001c55;
+  padding: 0.3rem;
+  transition: color 1s;
+  transition: background-color 1s;
+  border-radius: 3px;
+  background-color: #dbe7f1;
 }
 
 
@@ -176,10 +180,11 @@ background-color:#dbe7f1;
 
 
 
-.button-nav:hover, .button-nav:focus {
+.button-nav:hover,
+.button-nav:focus {
   border-bottom: 2px solid rgb(232, 221, 217);
-  color:rgb(232, 221, 217);
-  background-color:rgb(140, 140, 240);
+  color: rgb(232, 221, 217);
+  background-color: rgb(140, 140, 240);
 }
 
 
@@ -188,27 +193,31 @@ background-color:#dbe7f1;
   TEXT ELEMENTS -------------------
 */
 
-input{  /*  */
-  
+input {
+  /*  */
+
   font-size: 1rem;
   text-decoration: none;
-  color:black;
+  color: black;
   background-color: rgb(193, 191, 212);
-  border:rgb(170, 239, 255);
+  border: rgb(170, 239, 255);
   padding: 0.5rem;
   transition-property: background-color;
   transition-duration: 0.4s;
 }
 
-input:hover, input:focus, input:active{ /* hover for in-text link */
-  color:#EEE;
+input:hover,
+input:focus,
+input:active {
+  /* hover for in-text link */
+  color: #EEE;
   background-color: rgb(123, 110, 208);
-  border:1px solid rgb(170, 239, 255);
+  border: 1px solid rgb(170, 239, 255);
 
 }
 
-label{
-  color:rgb(94, 94, 193);
+label {
+  color: rgb(94, 94, 193);
   font-size: 1rem;
   padding: 0.5rem;
 }
@@ -218,81 +227,85 @@ label{
   COMBINED ELEMENTS -------------------
 */
 
-.main_nav a{ 
-margin:  3rem;
-text-decoration: none;
-color:#001c55;
-padding: 0.3rem;
+.main_nav a {
+  margin: 3rem;
+  text-decoration: none;
+  color: #001c55;
+  padding: 0.3rem;
 
-transition:color 0.8s;
-transition:background-color 0.8s;
-border-radius: 3px;
-background-color:#dbe7f1;
+  transition: color 0.8s;
+  transition: background-color 0.8s;
+  border-radius: 3px;
+  background-color: #dbe7f1;
 }
 
-.main_nav a:hover, .main_nav a:focus{
+.main_nav a:hover,
+.main_nav a:focus {
   border-bottom: 2px solid #dbe7f1;
-  color:#dbe7f1;
-  background-color:rgb(151, 151, 247);
-  }
-
-
-
-img{
-  max-width: 100%;
-
-  height:auto;
+  color: #dbe7f1;
+  background-color: rgb(151, 151, 247);
 }
 
-a img:hover, a img:focus, a img:active{ /* hover for image */
+
+
+img {
   max-width: 100%;
-  border:3px solid gray;
+
   height: auto;
-  filter: drop-shadow(5px 5px,10px gray);
+}
+
+a img:hover,
+a img:focus,
+a img:active {
+  /* hover for image */
+  max-width: 100%;
+  border: 3px solid gray;
+  height: auto;
+  filter: drop-shadow(5px 5px, 10px gray);
   opacity: 0.7;
 }
 
-li{
-  padding:1rem;
+li {
+  padding: 1rem;
 }
 
 /* product card section */
 
-.product{
+.product {
   display: flex;
   justify-content: space-around;
   max-width: 1600px;
   margin: auto;
-  gap:1rem;
-  flex-wrap:wrap;
-  
-  
+  gap: 1rem;
+  flex-wrap: wrap;
+
+
 }
 
 .product_card_heading {
-font-family: "Rajdhani";
+  font-family: "Rajdhani";
 }
 
-.product>div{
+.product>div {
 
- transition: box-shadow 0.5s;
- width:20%;
- flex:1;
+  transition: box-shadow 0.5s;
+  width: 20%;
+  flex: 1;
 
-  
+
 }
 
-.product>div:hover{
+.product>div:hover {
   box-shadow: 0px 2px 20px gray;
-   
- }
 
-.product img{
-  width:100%;
 }
 
-.product_card_info{
-  padding:0.2rem;
+.product img {
+  width: 100%;
+}
+
+.product_card_info {
+  padding: 0.2rem;
   margin-left: 0.5rem;
 }
 
@@ -300,15 +313,15 @@ font-family: "Rajdhani";
 
 
 
-.product_card_info>h2{
+.product_card_info>h2 {
   margin-top: 1rem;
-  font-size:1.2rem;
-  
+  font-size: 1.2rem;
+
 
 }
 
-.product_card_info h2 a{
-  color:#001c55;
+.product_card_info h2 a {
+  color: #001c55;
   text-decoration: none;
 
 }
@@ -316,22 +329,22 @@ font-family: "Rajdhani";
 
 
 
-.product_card_info p:nth-of-type(2){
- font-size: 0.9rem;
+.product_card_info p:nth-of-type(2) {
+  font-size: 0.9rem;
 
 }
 
 @media only screen and (max-width: 1000px) {
   .product_card {
     min-width: 45%;
-    flex:1;
+    flex: 1;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .product_card {
     min-width: 98%;
-    flex:1;
+    flex: 1;
   }
 }
 
@@ -339,14 +352,14 @@ font-family: "Rajdhani";
 
 
 
-.product_card_price{
-  
-  color:#001c55;
+.product_card_price {
+
+  color: #001c55;
 
 }
 
 .product_card_platform {
-  color:#001c55;
+  color: #001c55;
 }
 
 
@@ -355,263 +368,266 @@ font-family: "Rajdhani";
 
 /*  payment section */
 
-.payment{
-  max-width:50rem;
-  background-color:#dddddd;
-  padding:1rem;
+.payment {
+  max-width: 50rem;
+  background-color: #dddddd;
+  padding: 1rem;
 }
 
-.payment h2{
+.payment h2 {
   margin-top: 1rem;
-  
+
 }
 
-.payment label{
-  
- display:block;
+.payment label {
+
+  display: block;
 }
 
-.payment input{
-  
-  width:100%;
-  padding:0.8rem;
+.payment input {
+
+  width: 100%;
+  padding: 0.8rem;
   border: 1px solid #cccccc;
-  border-radius:3px;
-  margin-bottom:1.3rem;
- }
+  border-radius: 3px;
+  margin-bottom: 1.3rem;
+}
 
- /* payment method section */
+/* payment method section */
 
- .payment_method label{
-  display:inline;
-  margin-right:1rem;
- }
+.payment_method label {
+  display: inline;
+  margin-right: 1rem;
+}
 
- .payment_method input{
-  width:20px;
- }
+.payment_method input {
+  width: 20px;
+}
 
- .expDate{
-  display:flex;
-  gap:1rem;
- }
+.expDate {
+  display: flex;
+  gap: 1rem;
+}
 
- .expDate>div{
-  flex:1;
- }
+.expDate>div {
+  flex: 1;
+}
 
- .expDate input{  
-  width:100%;
- }
+.expDate input {
+  width: 100%;
+}
 
-  /* check out cart section------- */
+/* check out cart section------- */
 
 
 .cart-bgcolor {
   width: 40%;
-  background-color:#dddddd;
-  padding:1rem;
+  background-color: #dddddd;
+  padding: 1rem;
 }
 
-.cart{
+.cart {
 
-   background-color: rgba(185, 183, 189, 0.317);
-  display:flex;
-  max-width: 50rem;
-  gap:2rem;
+  background-color: rgba(185, 183, 189, 0.317);
+  display: flex;
+  max-width: 100%;
+  min-width: fit-content;
+  gap: 2rem;
   margin-top: 1rem;
-  padding:1rem;
-  
+  padding: 1rem;
+
+}
+
+.cart-info {
+  overflow: scroll;
 }
 
 
 
 
-@media screen and (max-width:500px){
-  .cart{
+@media screen and (max-width:500px) {
+  .cart {
     flex-direction: column;
   }
 }
 
-  
 
-.cart-image{
-  width:40%;
 
- 
- 
+.cart-image {
+  width: 40%;
+
+
+
 
 
   min-width: 50%;
-  
+
 }
 
 
 
 
 
-.cart-info{
-  width:70%;
-  display:flex;
+.cart-info {
+  width: 70%;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.checkout_heading{
+.checkout_heading {
   font-family: "Rajdhani";
 }
 
 
 
-.cart-price{
-  width:100%;
-  display:flex;
+.cart-price {
+  width: 100%;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-.cart-info div:nth-last-of-type(1){
-  display:flex;
+.cart-info div:nth-last-of-type(1) {
+  display: flex;
   justify-content: space-between;
 }
 
-.cart input{
-  
-  width:100%;
-  padding:0.8rem;
-  border: 1px solid #cccccc;
-  border-radius:3px;
-  margin-bottom:1.3rem;
-  margin-top: 1rem;
-  
- }
+.cart input {
 
-.total{
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  margin-bottom: 1.3rem;
+  margin-top: 1rem;
+
+}
+
+.total {
   max-width: 50rem;
   margin-top: 30px;
-  display:flex;
+  display: flex;
   padding-right: 30px;
 }
 
-.total p{
+.total p {
 
   padding-right: 30px;
 
 }
 
-  /* font------- */
+/* font------- */
 
-.text{
-  display:flex;
-  justify-content: space-around;
-
-  flex-wrap:wrap;
-}
-
-.font1{
-  font-family: "Rajdhani";
-  width: 21rem;
-  display:block;
-  padding:2rem;
-  text-align: center;
-
-  background-color:#dddddd;
-  margin-top:1rem;
-  margin-bottom:1rem;
-    
-}
-
-.font2{
-  font-family: "Montserra";
-  width: 21rem;
-  display:block;
-  padding:2rem;
-  text-align: center;
-  background-color:#dddddd;
-  margin-top:1rem;
-  margin-bottom:1rem;
-}
-
-  /* color palette------- */
-
-.purple{
-  width: 21rem;
-  background-color:#9797f7;
-  padding:2rem;
-  display:block;
-  text-align: center;
-  margin-top:1rem;
-  margin-bottom:1rem;
-  
-}
-
-.light_blue{
-  width: 21rem;
-  background-color:#dbe7f1;
-  padding:2rem;
-  display:block;
-  text-align: center;
-  margin-top:1rem;
-  margin-bottom:1rem;
-}
-
-.blue{
-  width: 21rem;
-  background-color:#001c55;
-  padding:2rem;
-  display:block;
-  color: #EEE;
-  text-align: center;
-  margin-top:1rem;
-  margin-bottom:1rem;
-}
-
-.blue p{
-  color: #EEE;
-}
-
-
-
-
-
-.gray{
-  width: 21rem;
-  background-color:#dddddd;
-  display:block;
-  padding:2rem;
-  
-  text-align: center;
-  margin-top:1rem;
-  margin-bottom:1rem;
-  
-}
-
-
-
-
-.color-palette{
-  
+.text {
   display: flex;
   justify-content: space-around;
 
-  flex-wrap:wrap;
-  margin:1rem;
-  margin-top:1rem;
-  margin-bottom:1rem;
-
-  
+  flex-wrap: wrap;
 }
 
-.imagery{
+.font1 {
+  font-family: "Rajdhani";
+  width: 21rem;
+  display: block;
+  padding: 2rem;
+  text-align: center;
+
+  background-color: #dddddd;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+}
+
+.font2 {
+  font-family: "Montserra";
+  width: 21rem;
+  display: block;
+  padding: 2rem;
+  text-align: center;
+  background-color: #dddddd;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* color palette------- */
+
+.purple {
+  width: 21rem;
+  background-color: #9797f7;
+  padding: 2rem;
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+}
+
+.light_blue {
+  width: 21rem;
+  background-color: #dbe7f1;
+  padding: 2rem;
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.blue {
+  width: 21rem;
+  background-color: #001c55;
+  padding: 2rem;
+  display: block;
+  color: #EEE;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.blue p {
+  color: #EEE;
+}
+
+
+
+
+
+.gray {
+  width: 21rem;
+  background-color: #dddddd;
+  display: block;
+  padding: 2rem;
+
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+}
+
+
+
+
+.color-palette {
+
+  display: flex;
+  justify-content: space-around;
+
+  flex-wrap: wrap;
+  margin: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+
+}
+
+.imagery {
   display: flex;
   justify-content: space-around;
   max-width: 1000px;
   margin: auto;
-  gap:1rem;
-  flex-wrap:wrap;
-  
+  gap: 1rem;
+  flex-wrap: wrap;
+
 }
-
-
