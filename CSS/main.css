@@ -140,6 +140,7 @@ input[type="text"]:focus {
 .header-mid {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem 0;
 
 }
@@ -174,9 +175,14 @@ input[type="text"]:focus {
 }
 
 .header-mid .logo img {
-    width: 9%;
+    width: 40%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+.logo>a{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
 }
 
@@ -324,7 +330,7 @@ input[type="text"]:focus {
     }
 
     .header-mid .logo img {
-        width: 35px;
+        width:80%; 
 
 
     }
