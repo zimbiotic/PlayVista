@@ -10,6 +10,11 @@
     ></script>
     <link href="css/main.css" rel="stylesheet" />
     <link href="css/home.css" rel="stylesheet" />
+    <link href="css/browse.css" rel="stylesheet" />
+    <link href="css/flexbox.css" rel="stylesheet" />
+    <link href="css/fonts.css" rel="stylesheet" />
+
+
   </head>
 
   <body>
@@ -30,7 +35,7 @@
                 </li>
                 <li><a href="#" class="nav-btn-link menu_item">Sale</a></li>
                 <li><a href="#" class="nav-btn-link menu_item">Games</a></li>
-                <li><a href="#" class="nav-btn-link menu_item">Hardware</a></li>
+                <li><a href="./browse.html" class="nav-btn-link menu_item">Browse</a></li>
               </ul>
             </div>
           </div>
@@ -38,7 +43,7 @@
 
         <div class="logo">
           <a href="index.html"
-            ><img src="images/logoNew.png" alt="PV logo"
+            ><img src="./images/logoNew.png" alt="PV logo"
           /></a>
         </div>
 
@@ -48,8 +53,8 @@
         </div>
 
         <div class="sign-cart">
-          <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-          <a href="#"><i class="fa-solid fa-user"></i></a>
+          <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="./profile.html"><i class="fa-solid fa-user"></i></a>
         </div>
       </div>
 
@@ -59,19 +64,122 @@
             <li><a href="#" class="nav-btn-link">New arrivals</a></li>
             <li><a href="#" class="nav-btn-link">Sale</a></li>
             <li><a href="#" class="nav-btn-link">Games</a></li>
-            <li><a href="#" class="nav-btn-link">Hardware</a></li>
+            <li><a href="browse.html" class="nav-btn-link">Browse</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main>
-      <div class="hero">
-        <a href="#" class="btn-link">SHOP NOW</a>
-      </div>
-    </main>
-    <footer>
-      <a class="nav-btn-link" href="guide.html" target="_blank">Style Guide</a>
-    </footer>
+        <div class="hero">
+          <a href="#" class="btn-link">SHOP NOW</a>
+        </div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <div class="box">
+                  <!-- 
+                      using the div to group elements under the class name box and images.   
+                  -->
+                  <div class="box-item-image">
+                          <img src="./Images/starWars.jpg" alt="Bad image">
+                          <!-- <figcaption>Beware of robots like this.</figcaption> -->
+                  </div>
+  
+                  <!-- 
+                      Wrapping our text in a <div> so we can position it next to our text.
+                  -->
+  
+                  <div class="box-item-text">
+               <h1 class="headersHome">Star Wars</h1>
+            Get ready to embark on an exhilarating journey in Star Wars Jedi: Fallen Order, a gripping action-adventure game that immerses you in the Star Wars universe. 
+            Set after the events of Revenge of the Sith, you step into the role of Cal Kestis, a young Jedi Padawan on the run from the Empire's relentless Inquisitors. 
+            With lightsaber in hand and your trusty droid companion BD-1 by your side, you must navigate treacherous worlds, uncover ancient mysteries, and develop your Force abilities. 
+            Engage in intense lightsaber combat, solve intricate puzzles, and make choices that shape Cal's destiny. 
+            With its captivating storyline, stunning visuals, and satisfying gameplay, Star Wars Jedi: Fallen Order is a must-play for Star Wars fans and gamers alike
+            <br></br>
+            <br>
+               <a href="cart.html">Buy now</a>
+            </br>
+          </div>
+        </div>
+        <br></br>
+        <br></br>
+        <div class="box">
+                  <!-- 
+                      using the div to group elements under the class name box and images.   
+                  -->
+                  <div class="box-item-image2">
+                          <img src="./Images/horizon.png" alt="Bad image">
+                          <!-- <figcaption>Beware of robots like this.</figcaption> -->
+                  </div>
+  
+                  <!-- 
+                      Wrapping our text in a <div> so we can position it next to our text.
+                  -->
+  
+                  <div class="box-item-text2">
+               <h1 class="headersHome">Horizon Forbidden West</h1>
+               Serving as the highly anticipated sequel to the critically acclaimed Horizon Zero Dawn, the game continues the journey of Aloy, a skilled hunter and archer, in a post-apocalyptic 
+               world filled with robotic creatures. Set in a vibrant and diverse open-world environment spanning landscapes such as deserts, forests, and underwater realms, players will embark 
+               on an epic quest to unravel the mysteries of the Forbidden West. With improved graphics, enhanced gameplay mechanics, and new weapons and abilities, Horizon Forbidden West promises 
+               a visually stunning and immersive experience that will captivate both fans of the original game and newcomers to the series.
+               <br></br>
+               <br>
+                 <a href="cart.html">Buy now</a>
+              </br>
+              </div>
+        </div>
+      </main>
+      <br></br>      
+    
   </body>
+
+
+<footer class="footer">
+    <div class="container"> 
+        <div class="row">   
+            <div class="footer-col">
+                 <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="guide.html">Style guide</a></li>
+                    <li><a href="#">Our services</a></li>
+                    <li><a href="#">Privicy policy</a></li>
+                </ul>
+            </div> 
+            <div class="footer-col">
+                <h4>Support</h4>
+                
+               <ul>
+                   <li><a href="#">F&Q</a></li>
+                   <li><a href="#">Shipping</a></li>
+                   <li><a href="#">Returns</a></li>
+                   <li><a href="#">Order status</a></li>
+               </ul>
+           </div> 
+           
+            <div class="footer-col">
+                <h4>Connect</h4>
+
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+
+                </div>
+                
+            </div> 
+
+
+    </div>
+
+</div>
+</footer>
+
+
+
+
+
 </html>
