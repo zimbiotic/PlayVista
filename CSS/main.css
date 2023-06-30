@@ -12,9 +12,13 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Rajdhani";
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+  }
 
 
 /* in-text link*/
@@ -354,19 +358,19 @@ input[type="text"]:focus {
 
 
 .footer {
-     margin:0;
-     padding:0;
+    
 
     background-color: #3c1361;
     color: #ffffff;
     font-family: Montserrat;
-    padding: 20px 0;
+    
     padding: 70px 0;
   }
 
 .footer a{
     color:#ffffff;
     text-decoration:none;
+    
     
     
 }
