@@ -1,184 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>PlayVista - Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script
-      src="https://kit.fontawesome.com/40d5bdbdec.js"
-      crossorigin="anonymous"
-    ></script>
-    <link href="css/main.css" rel="stylesheet" />
-    <link href="css/home.css" rel="stylesheet" />
-    <link href="css/browse.css" rel="stylesheet" />
-    <link href="css/flexbox.css" rel="stylesheet" />
-    <link href="css/fonts.css" rel="stylesheet" />
-    <script src="script.js"></script> 
 
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <title>PlayVista - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://kit.fontawesome.com/40d5bdbdec.js" crossorigin="anonymous"></script>
+  <link href="./css/main.css" rel="stylesheet" />
+  <link href="./css/home.css" rel="stylesheet" />
+  <link href="./css/browse.css" rel="stylesheet" />
+  <link href="./css/flexbox.css" rel="stylesheet" />
+  <link href="./css/fonts.css" rel="stylesheet" />
+  <script src="./script.js"></script>
 
-  <body>
-    <header>
-      <div class="header-top">
-        <p><a href="#">Free shipping!</a></p>
-      </div>
+</head>
 
-      <div class="header-mid">
-        <div class="mobile-icon">
-          <div class="hamburger_menu_container">
-            <input id="menu_icon_button" type="checkbox" />
-            <i class="fa-solid fa-bars menu_icon"></i>
-            <div class="menu_container1">
-             
-               
-                  <a href="#" class="nav-btn-link menu_item">New arrivals</a>
-                 
-                  <a href="#" class="nav-btn-link menu_item">Sale</a>
-                  <a href="#" class="nav-btn-link menu_item">Games</a>
-                  <a href="./browse.html" class="nav-btn-link menu_item">Browse</a>
-              </div>
-             
-          
+<body>
+  <header>
+    <div class="header-top">
+      <p><a href="#">Free shipping!</a></p>
+    </div>
+
+    <div class="header-mid">
+      <div class="mobile-icon">
+        <div class="hamburger_menu_container">
+          <button id="menu_icon_button" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars menu_icon" id="menu_icon"></i>
+          </button>
+          <div class="menu_container" id="hamburger_menu_contents">
+
+
+            <a href="#" class="nav-btn-link menu_item">New arrivals</a>
+
+            <a href="#" class="nav-btn-link menu_item">Sale</a>
+            <a href="#" class="nav-btn-link menu_item">Games</a>
+            <a href="./browse.html" class="nav-btn-link menu_item">Browse</a>
           </div>
-        </div>
 
-        <div class="logo">
-          <a href="index.html"
-            ><img src="./images/logoNew.png" alt="PV logo"
-          /></a>
-        </div>
 
-        <div class="search-bar">
-          <input type="text" name="search" />
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-
-        <div class="sign-cart">
-          <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-          <a href="./profile.html"><i class="fa-solid fa-user"></i></a>
         </div>
       </div>
 
-      <div class="fixedheaderpart">
-        <div class="header-bot">
-          <nav>
-            <ul>
-              <li><a href="#" class="nav-btn-link">New arrivals</a></li>
-              <li><a href="#" class="nav-btn-link">Sale</a></li>
-              <li><a href="#" class="nav-btn-link">Games</a></li>
-              <li><a href="browse.html" class="nav-btn-link">Browse</a></li>
-            </ul>
-          </nav>
-        </div>
-     
-    </header>
+      <div class="logo">
+        <a href="index.html"><img src="./images/logoNew.png" alt="PV logo" /></a>
+      </div>
 
-    <main>
-       <div class="herohead">
-        <div class="hero">
-          <video src="./Images/god-of-war-raganrok-video-hero-mobile-01-en-21oct22.mp4" controls loop  ></video>
-          <a href="#" class="btn-link">SHOP NOW</a>
-        </div>
-        <br></br>
-        <br></br>
-        <br></br>
-        <div class="box">
-                  <!-- 
+      <div class="search-bar">
+        <input type="text" name="search" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <div class="sign-cart">
+        <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="./profile.html"><i class="fa-solid fa-user"></i></a>
+      </div>
+    </div>
+
+    <div class="fixedheaderpart">
+      <div class="header-bot">
+        <nav>
+          <ul>
+            <li><a href="#" class="nav-btn-link">New arrivals</a></li>
+            <li><a href="#" class="nav-btn-link">Sale</a></li>
+            <li><a href="#" class="nav-btn-link">Games</a></li>
+            <li><a href="browse.html" class="nav-btn-link">Browse</a></li>
+          </ul>
+        </nav>
+      </div>
+
+  </header>
+
+  <main>
+    <div class="herohead">
+      <div class="hero">
+        <video src="./Images/god-of-war-raganrok-video-hero-mobile-01-en-21oct22.mp4" controls="false" autoplay
+          loop></video>
+        <a href="#" class="btn-link">SHOP NOW</a>
+      </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <div class="box">
+        <!-- 
                       using the div to group elements under the class name box and images.   
                   -->
-                  <div class="box-item-image">
-                          <img src="./Images/starWars.jpg" alt="Bad image">
-                          <!-- <figcaption>Beware of robots like this.</figcaption> -->
-                  </div>
-  
-                  <!-- 
+        <div class="box-item-image">
+          <img src="./Images/starWars.jpg" alt="Bad image">
+          <!-- <figcaption>Beware of robots like this.</figcaption> -->
+        </div>
+
+        <!-- 
                       Wrapping our text in a <div> so we can position it next to our text.
                   -->
-  
-                  <div class="box-item-text">
-               <h1 class="headersHome">Star Wars</h1>
-            Get ready to embark on an exhilarating journey in Star Wars Jedi: Fallen Order, a gripping action-adventure game that immerses you in the Star Wars universe. 
-            Set after the events of Revenge of the Sith, you step into the role of Cal Kestis, a young Jedi Padawan on the run from the Empire's relentless Inquisitors. 
-            With lightsaber in hand and your trusty droid companion BD-1 by your side, you must navigate treacherous worlds, uncover ancient mysteries, and develop your Force abilities. 
-            Engage in intense lightsaber combat, solve intricate puzzles, and make choices that shape Cal's destiny. 
-            With its captivating storyline, stunning visuals, and satisfying gameplay, Star Wars Jedi: Fallen Order is a must-play for Star Wars fans and gamers alike
-            <br></br>
-            <br>
-               <div class="buy"><a href="cart.html">Buy now</a></div>
-            </br>
-          </div>
+
+        <div class="box-item-text">
+          <h1 class="headersHome">Star Wars</h1>
+          Get ready to embark on an exhilarating journey in Star Wars Jedi: Fallen Order, a gripping action-adventure
+          game that immerses you in the Star Wars universe.
+          Set after the events of Revenge of the Sith, you step into the role of Cal Kestis, a young Jedi Padawan on the
+          run from the Empire's relentless Inquisitors.
+          With lightsaber in hand and your trusty droid companion BD-1 by your side, you must navigate treacherous
+          worlds, uncover ancient mysteries, and develop your Force abilities.
+          Engage in intense lightsaber combat, solve intricate puzzles, and make choices that shape Cal's destiny.
+          With its captivating storyline, stunning visuals, and satisfying gameplay, Star Wars Jedi: Fallen Order is a
+          must-play for Star Wars fans and gamers alike
+          <br></br>
+          <br>
+          <div class="buy"><a href="cart.html">Buy now</a></div>
+          </br>
         </div>
-        <br></br>
-        <br></br>
-        <div class="box">
-                  <!-- 
+      </div>
+      <br></br>
+      <br></br>
+      <div class="box">
+        <!-- 
                       using the div to group elements under the class name box and images.   
                   -->
-                  <div class="box-item-image2">
-                          <img src="./Images/horizon.png" alt="Bad image">
-                          <!-- <figcaption>Beware of robots like this.</figcaption> -->
-                  </div>
-  
-                  <!-- 
+        <div class="box-item-image2">
+          <img src="./Images/horizon.png" alt="Bad image">
+          <!-- <figcaption>Beware of robots like this.</figcaption> -->
+        </div>
+
+        <!-- 
                       Wrapping our text in a <div> so we can position it next to our text.
                   -->
-  
-                  <div class="box-item-text2">
-               <h1 class="headersHome">Horizon Forbidden West</h1>
-               Serving as the highly anticipated sequel to the critically acclaimed Horizon Zero Dawn, the game continues the journey of Aloy, a skilled hunter and archer, in a post-apocalyptic 
-               world filled with robotic creatures. Set in a vibrant and diverse open-world environment spanning landscapes such as deserts, forests, and underwater realms, players will embark 
-               on an epic quest to unravel the mysteries of the Forbidden West. With improved graphics, enhanced gameplay mechanics, and new weapons and abilities, Horizon Forbidden West promises 
-               a visually stunning and immersive experience that will captivate both fans of the original game and newcomers to the series.
-               <br></br>
-               <br>
-               <div class="buy"><a href="cart.html">Buy now</a></div>
-              </br>
-              </div>
+
+        <div class="box-item-text2">
+          <h1 class="headersHome">Horizon Forbidden West</h1>
+          Serving as the highly anticipated sequel to the critically acclaimed Horizon Zero Dawn, the game continues the
+          journey of Aloy, a skilled hunter and archer, in a post-apocalyptic
+          world filled with robotic creatures. Set in a vibrant and diverse open-world environment spanning landscapes
+          such as deserts, forests, and underwater realms, players will embark
+          on an epic quest to unravel the mysteries of the Forbidden West. With improved graphics, enhanced gameplay
+          mechanics, and new weapons and abilities, Horizon Forbidden West promises
+          a visually stunning and immersive experience that will captivate both fans of the original game and newcomers
+          to the series.
+          <br></br>
+          <br>
+          <div class="buy"><a href="cart.html">Buy now</a></div>
+          </br>
         </div>
-       </div>
-      </main>
-      <br></br>      
-    
-  </body>
+      </div>
+    </div>
+    <script src="./js/hamburger.js"></script>
+  </main>
+  <br></br>
+
+</body>
 
 
 <footer class="footer">
-    <div class="container"> 
-        <div class="row">   
-            <div class="footer-col">
-                 <h4>Company</h4>
-                <ul>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="guide.html">Style guide</a></li>
-                    <li><a href="#">Our services</a></li>
-                    <li><a href="#">Privicy policy</a></li>
-                </ul>
-            </div> 
-            <div class="footer-col">
-                <h4>Support</h4>
-                
-               <ul>
-                   <li><a href="#">F&Q</a></li>
-                   <li><a href="#">Shipping</a></li>
-                   <li><a href="#">Returns</a></li>
-                   <li><a href="#">Order status</a></li>
-               </ul>
-           </div> 
-           
-            <div class="footer-col">
-                <h4>Connect</h4>
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="guide.html">Style guide</a></li>
+          <li><a href="#">Our services</a></li>
+          <li><a href="#">Privicy policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
 
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
+        <ul>
+          <li><a href="#">F&Q</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Order status</a></li>
+        </ul>
+      </div>
 
-                </div>
-                
-            </div> 
+      <div class="footer-col">
+        <h4>Connect</h4>
+
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+
+        </div>
+
+      </div>
     </div>
-</div>
+  </div>
 </footer>
 
 </html>

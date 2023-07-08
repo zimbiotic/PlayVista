@@ -1,175 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>PlayVista - Cart</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script
-      src="https://kit.fontawesome.com/40d5bdbdec.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="CSS/normalize.css" />
-    <link href="css/guide.css" rel="stylesheet" />
-    <link href="CSS/fonts.css" rel="stylesheet" />
-    <link href="css/main.css" rel="stylesheet" />
-    <link href="css/home.css" rel="stylesheet" />
-    <script src="script.js"></script> 
-    
-  </head>
 
-  <body>
-    <header>
-      <div class="header-top">
-      
-        <p><a href="#">Free shipping!</a></p>
-      </div>
+<head>
+  <meta charset="utf-8" />
+  <title>PlayVista - Cart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://kit.fontawesome.com/40d5bdbdec.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link href="./css/guide.css" rel="stylesheet" />
+  <link href="./css/fonts.css" rel="stylesheet" />
+  <link href="./css/main.css" rel="stylesheet" />
+  <link href="./css/home.css" rel="stylesheet" />
+  <script src="script.js"></script>
 
-      <div class="header-mid">
-        <div class="mobile-icon">
-          <div class="hamburger_menu_container">
-            <input id="menu_icon_button" type="checkbox" />
-            <i class="fa-solid fa-bars menu_icon"></i>
-            <div class="menu_container">
-              <ul class="menu">
-                <li>
-                  <a href="#" class="nav-btn-link menu_item">New arrivals</a>
-                </li>
-                <li><a href="#" class="nav-btn-link menu_item">Sale</a></li>
-                <li><a href="#" class="nav-btn-link menu_item">Games</a></li>
-                <li><a href="#" class="nav-btn-link menu_item">Hardware</a></li>
-              </ul>
-            </div>
+</head>
+
+<body>
+  <header>
+    <div class="header-top">
+
+      <p><a href="#">Free shipping!</a></p>
+    </div>
+
+    <div class="header-mid">
+      <div class="mobile-icon">
+        <div class="hamburger_menu_container">
+          <button id="menu_icon_button" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars menu_icon" id="menu_icon"></i>
+          </button>
+          <div class="menu_container" id="hamburger_menu_contents">
+            <ul class="menu">
+              <li>
+                <a href="#" class="nav-btn-link menu_item">New arrivals</a>
+              </li>
+              <li><a href="#" class="nav-btn-link menu_item">Sale</a></li>
+              <li><a href="#" class="nav-btn-link menu_item">Games</a></li>
+              <li><a href="#" class="nav-btn-link menu_item">Hardware</a></li>
+            </ul>
           </div>
-        </div>
-
-        <div class="logo">
-          <a href="index.html"
-            ><img src="./images/logoNew.png" alt="PV logo"
-          /></a>
-        </div>
-
-        <div class="search-bar">
-          <input type="text" name="search" />
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-
-        <div class="sign-cart">
-          <a href="./profile.html"><i class="fa-solid fa-user"></i></a>
         </div>
       </div>
 
-      <div class="header-bot">
-        <nav>
-          <ul>
-            <li><a href="#" class="nav-btn-link">New arrivals</a></li>
-            <li><a href="#" class="nav-btn-link">Sale</a></li>
-            <li><a href="#" class="nav-btn-link">Games</a></li>
-            <li><a href="#" class="nav-btn-link">Hardware</a></li>
-          </ul>
-        </nav>
+      <div class="logo">
+        <a href="index.html"><img src="./images/logoNew.png" alt="PV logo" /></a>
       </div>
-    </header>
 
-    <section class="element">
-      <h3>Checkout Cart</h3>
-      <div class="cart-bgcolor">
-        <div class="cart">
-          <div class="cart-image">
-            <img
-              src="https://images.igdb.com/igdb/image/upload/t_original/co5vmg.webp"
-              alt="The Legend of Zelda: Tears of the Kingdom"
-            />
-          </div>
-          <div class="cart-info">
-            <div>
-              <h3 class="checkout_heading">
-                The Legend of Zelda: Tears of the Kingdom
-              </h3>
-              <p>Type: Digital</p>
-            </div>
+      <div class="search-bar">
+        <input type="text" name="search" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
 
-            <div>
-              <span>CAD $89.99</span>
-              <span>X1</span>
-              <span>CAD $89.99</span>
-            </div>
-          </div>
+      <div class="sign-cart">
+        <a href="./profile.html"><i class="fa-solid fa-user"></i></a>
+      </div>
+    </div>
+
+    <div class="header-bot">
+      <nav>
+        <ul>
+          <li><a href="#" class="nav-btn-link">New arrivals</a></li>
+          <li><a href="#" class="nav-btn-link">Sale</a></li>
+          <li><a href="#" class="nav-btn-link">Games</a></li>
+          <li><a href="#" class="nav-btn-link">Hardware</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="element">
+    <h3>Checkout Cart</h3>
+    <div class="cart-bgcolor">
+      <div class="cart">
+        <div class="cart-image">
+          <img src="https://images.igdb.com/igdb/image/upload/t_original/co5vmg.webp"
+            alt="The Legend of Zelda: Tears of the Kingdom" />
         </div>
-
-        <div class="cart">
-          <div class="cart-image">
-            <img
-              src="https://assets-prd.ignimgs.com/2022/06/14/zelda-breath-of-the-wild-1655249167687.jpg"
-              alt="The Legend of Zelda: Breath of the Wild"
-            />
+        <div class="cart-info">
+          <div>
+            <h3 class="checkout_heading">
+              The Legend of Zelda: Tears of the Kingdom
+            </h3>
+            <p>Type: Digital</p>
           </div>
-          <div class="cart-info">
-            <div>
-              <h3 class="checkout_heading">
-                The Legend of Zelda: Breath of the Wild
-              </h3>
-              <p>Type: Digital</p>
-            </div>
 
-            <div>
-              <span>CAD $79.99</span>
-              <span>X1</span>
-              <span>CAD $79.99</span>
-            </div>
+          <div>
+            <span>CAD $89.99</span>
+            <span>X1</span>
+            <span>CAD $89.99</span>
           </div>
-        </div>
-
-        <div class="cart">
-          <div class="cart-price">
-            <span><strong>Total</strong></span>
-            <span><strong>CAD $169.98</strong></span>
-          </div>
-        </div>
-        <div class="cart">
-          <input type="Submit" value="Check out" />
         </div>
       </div>
-    </section>
-  </body>
-  <footer class="footer">
-    <div class="container"> 
-        <div class="row">   
-            <div class="footer-col">
-                 <h4>Company</h4>
-                <ul>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="guide.html">Style guide</a></li>
-                    <li><a href="#">Our services</a></li>
-                    <li><a href="#">Privicy policy</a></li>
-                </ul>
-            </div> 
-            <div class="footer-col">
-                <h4>Support</h4>
-                
-               <ul>
-                   <li><a href="#">F&Q</a></li>
-                   <li><a href="#">Shipping</a></li>
-                   <li><a href="#">Returns</a></li>
-                   <li><a href="#">Order status</a></li>
-               </ul>
-           </div> 
-           
-            <div class="footer-col">
-                <h4>Connect</h4>
 
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
+      <div class="cart">
+        <div class="cart-image">
+          <img src="https://assets-prd.ignimgs.com/2022/06/14/zelda-breath-of-the-wild-1655249167687.jpg"
+            alt="The Legend of Zelda: Breath of the Wild" />
+        </div>
+        <div class="cart-info">
+          <div>
+            <h3 class="checkout_heading">
+              The Legend of Zelda: Breath of the Wild
+            </h3>
+            <p>Type: Digital</p>
+          </div>
 
-                </div>
-                
-            </div> 
+          <div>
+            <span>CAD $79.99</span>
+            <span>X1</span>
+            <span>CAD $79.99</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart">
+        <div class="cart-price">
+          <span><strong>Total</strong></span>
+          <span><strong>CAD $169.98</strong></span>
+        </div>
+      </div>
+      <div class="cart">
+        <input type="Submit" value="Check out" />
+      </div>
+    </div>
+  </section>
+  <script src="./js/hamburger.js"></script>
+</body>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="guide.html">Style guide</a></li>
+          <li><a href="#">Our services</a></li>
+          <li><a href="#">Privicy policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+
+        <ul>
+          <li><a href="#">F&Q</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Order status</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Connect</h4>
+
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+
+        </div>
+
+      </div>
 
 
     </div>
 
-</div>
+  </div>
 </footer>
+
 </html>

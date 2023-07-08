@@ -270,35 +270,20 @@ input[type="text"]:focus {
 }
 
 #menu_icon_button {
-    margin: 0%;
-    opacity: 0%;
-    max-width: fit-content;
-    height: 100%;
+    padding: 0;
     z-index: 3;
+    font-size: 1.3em;
+    border: none;
+    color: #3c1361;
 }
-
-#menu_icon_button:checked~.menu_container {
-    left: 0 !important;
-}
-
-#menu_icon_button:checked+.fa-bars {
-    transform: rotate(90deg);
-}
-
-#menu_icon_button:checked+.menu_icon {
-    transform: rotate(90deg);
-}
-
-
 .menu_icon {
-    position: absolute;
-    left: 0;
-    top: 0;
     z-index: 2;
     transition: transform ease-in-out 0.1s;
+    font-size: 1.3em;
+    color: #3c1361;
 }
 
-#menu_icon_button:hover~.menu_icon {
+#menu_icon_button:hover>i{
     color: #b491c8;
 }
 
@@ -417,8 +402,6 @@ input[type="text"]:focus {
 
     .hamburger_menu_container {
         display: flex;
-        flex-direction: row;
-        position: relative;
     }
 }
 

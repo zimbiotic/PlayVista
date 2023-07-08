@@ -8,11 +8,11 @@
   <title>P01 - Style Guide Template</title>
 
   <script src="https://kit.fontawesome.com/40d5bdbdec.js" crossorigin="anonymous"></script>
-  <link href="css/guide.css" rel="stylesheet">
-  <link href="CSS/home.css" rel="stylesheet">
-  <link href="CSS/fonts.css" rel="stylesheet">
-  <link rel="stylesheet" href="CSS/normalize.css">
-  <link href="css/main.css" rel="stylesheet">
+  <link href="./css/guide.css" rel="stylesheet">
+  <link href="./css/home.css" rel="stylesheet">
+  <link href="./css/fonts.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link href="./css/main.css" rel="stylesheet">
 
 </head>
 
@@ -27,9 +27,10 @@
     <div class="header-mid">
       <div class="mobile-icon">
         <div class="hamburger_menu_container">
-          <input id="menu_icon_button" type="checkbox" />
-          <i class="fa-solid fa-bars menu_icon"></i>
-          <div class="menu_container">
+          <button id="menu_icon_button" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars menu_icon" id="menu_icon"></i>
+          </button>
+          <div class="menu_container" id="hamburger_menu_contents">
             <ul class="menu">
               <li>
                 <a href="#" class="nav-btn-link menu_item">New arrivals</a>
@@ -43,7 +44,7 @@
       </div>
 
       <div class="logo">
-        <a href="index.html"><img src="images/logoNew.png" alt="PV logo"></a>
+        <a href="index.html"><img src="./Images/logoNew.png" alt="PV logo"></a>
       </div>
 
       <div class="search-bar">
@@ -582,7 +583,7 @@
 
   </section>
 
-
+  <script src="./js/hamburger.js"></script>
 
 </body>
 
