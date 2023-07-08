@@ -372,6 +372,7 @@ li {
   max-width: 50rem;
   background-color: #dddddd;
   padding: 1rem;
+  margin: auto;
 }
 
 .payment h2 {
@@ -421,22 +422,26 @@ li {
 
 
 .cart-bgcolor {
-  width: 40%;
+  max-width: 1000px;
   background-color: #dddddd;
   padding: 1rem;
+  margin: auto;
 }
 
 .cart {
 
   background-color: rgba(185, 183, 189, 0.317);
   display: flex;
-  max-width: 100%;
+  
   min-width: fit-content;
   gap: 2rem;
   margin-top: 1rem;
   padding: 1rem;
 
+
 }
+
+
 
 .cart-info {
   overflow: scroll;
@@ -464,6 +469,7 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+ 
 }
 
 .checkout_heading {

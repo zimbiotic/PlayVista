@@ -1,3 +1,4 @@
+/* Retreived this code from https://www.w3schools.com/howto/howto_js_slideshow.asp */
 * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -48,6 +49,8 @@
   text-align: center;
 }
 
+
+
 a.new-btn-link {
     color: #3c1361;
     font-weight: bold;
@@ -55,11 +58,11 @@ a.new-btn-link {
     transition: all 0.3s;
     border-radius: 20px;
     padding: 8px 12px;
-    position: absolute;
+    position: absolute; 
     bottom: 8px;
-    margin-left: 44%;
+    left: calc(50% - 50px);
     text-decoration: none;
-    bottom: 15%;
+    bottom: 15%; 
 
 }
 

@@ -1,7 +1,7 @@
+// Retreived this code from https://www.w3schools.com/howto/howto_js_slideshow.asp 
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
@@ -23,6 +23,7 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
+  
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
 }
