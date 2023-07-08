@@ -6,12 +6,13 @@
   <title>PlayVista - Cart</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://kit.fontawesome.com/40d5bdbdec.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./css/normalize.css" />
-  <link href="./css/guide.css" rel="stylesheet" />
-  <link href="./css/fonts.css" rel="stylesheet" />
   <link href="./css/main.css" rel="stylesheet" />
+  <link href="./css/guide.css" rel="stylesheet" />
   <link href="./css/home.css" rel="stylesheet" />
-  <script src="script.js"></script>
+  <link href="./css/browse.css" rel="stylesheet" />
+  <link href="./css/flexbox.css" rel="stylesheet" />
+  <link href="./css/fonts.css" rel="stylesheet" />
+  <script src="./js/script.js"></script>
 
 </head>
 
@@ -31,7 +32,7 @@
           <div class="menu_container" id="hamburger_menu_contents">
             <ul class="menu">
               <li>
-                <a href="#" class="nav-btn-link menu_item">New arrivals</a>
+                <a href="./new.html" class="nav-btn-link menu_item">New arrivals</a>
               </li>
               <li><a href="#" class="nav-btn-link menu_item">Sale</a></li>
               <li><a href="#" class="nav-btn-link menu_item">Games</a></li>
@@ -58,7 +59,7 @@
     <div class="header-bot">
       <nav>
         <ul>
-          <li><a href="#" class="nav-btn-link">New arrivals</a></li>
+          <li><a href="./new.html" class="nav-btn-link">New arrivals</a></li>
           <li><a href="#" class="nav-btn-link">Sale</a></li>
           <li><a href="#" class="nav-btn-link">Games</a></li>
           <li><a href="#" class="nav-btn-link">Hardware</a></li>
@@ -119,7 +120,11 @@
         </div>
       </div>
       <div class="cart">
-        <input type="Submit" value="Check out" />
+        <div class="cart-check">
+          <form action="payment.html">
+            <input type="submit" value="Check out" />
+          </form>
+        </div>
       </div>
     </div>
   </section>
@@ -160,10 +165,7 @@
         </div>
 
       </div>
-
-
     </div>
-
   </div>
 </footer>
 
