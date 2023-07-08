@@ -6,7 +6,7 @@
 /* hero section */
 
 .hero{
-    background-image: url(../Images/homebg.jpg.webp);
+   
     background-repeat: no-repeat;
     background-size: cover;
   
@@ -16,6 +16,15 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-
     position: relative;
+}
+
+.hero.floating{
+    z-index: 1;
+}
+
+.header-bot
+{
+    position: sticky;
+    top: 0px;
 }

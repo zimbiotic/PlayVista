@@ -6,13 +6,13 @@
   <title>PlayVista - Cart</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://kit.fontawesome.com/40d5bdbdec.js" crossorigin="anonymous"></script>
-  <link href="./css/main.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/normalize.css" />
   <link href="./css/guide.css" rel="stylesheet" />
-  <link href="./css/home.css" rel="stylesheet" />
-  <link href="./css/browse.css" rel="stylesheet" />
-  <link href="./css/flexbox.css" rel="stylesheet" />
   <link href="./css/fonts.css" rel="stylesheet" />
-  <script src="./js/script.js"></script>
+  <link href="./css/main.css" rel="stylesheet" />
+  <link href="./css/home.css" rel="stylesheet" />
+  <script src="script.js"></script>
+  <script src="./js/hamburger.js" defer></script>
 
 </head>
 
@@ -36,7 +36,7 @@
               </li>
               <li><a href="#" class="nav-btn-link menu_item">Sale</a></li>
               <li><a href="#" class="nav-btn-link menu_item">Games</a></li>
-              <li><a href="#" class="nav-btn-link menu_item">Hardware</a></li>
+              <li><a href="browse.html" class="nav-btn-link menu_item">Browse</a></li>
             </ul>
           </div>
         </div>
@@ -59,77 +59,95 @@
     <div class="header-bot">
       <nav>
         <ul>
-          <li><a href="./new.html" class="nav-btn-link">New arrivals</a></li>
+          <li><a href="#" class="nav-btn-link">New arrivals</a></li>
           <li><a href="#" class="nav-btn-link">Sale</a></li>
           <li><a href="#" class="nav-btn-link">Games</a></li>
-          <li><a href="#" class="nav-btn-link">Hardware</a></li>
+          <li><a href="browse.html" class="nav-btn-link">Browse</a></li>
         </ul>
       </nav>
     </div>
+
+
   </header>
 
   <section class="element">
-    <h3>Checkout Cart</h3>
-    <div class="cart-bgcolor">
-      <div class="cart">
-        <div class="cart-image">
-          <img src="https://images.igdb.com/igdb/image/upload/t_original/co5vmg.webp"
-            alt="The Legend of Zelda: Tears of the Kingdom" />
+    <h3>Payment Form</h3>
+    <div class="payment">
+      <div class="address">
+        <h2> Billing Address</h2>
+        <label for="fName">First Name</label>
+        <input type="text" id="fName" placeholder="First name">
+
+        <label for="lName">Last Name</label>
+        <input type="text" id="=lName" placeholder="Last name">
+
+        <label for="email">Email</label>
+        <input type="text" id="=email" placeholder="John@example.com">
+
+        <label for="address">Address</label>
+        <input type="text" id="=address" placeholder="388 North st">
+
+        <label for="city">City</label>
+        <input type="text" id="=city" placeholder="Burnaby">
+
+        <label for="state">State</label>
+        <input type="text" id="=state" placeholder="BC">
+
+
+
+      </div>
+
+      <div class="pay">
+        <h2>Payment Method</h2>
+
+        <div class="payment_method">
+          <input type="radio" id="visa" name="bank card">
+          <label for="visa">VISA</label>
+
+
+          <input type="radio" id="master" name="bank card">
+          <label for="master">Master</label>
         </div>
-        <div class="cart-info">
+
+        <label for="cardName">Name on card</label>
+        <input type="text" id="=cardName" placeholder="John Smith">
+
+        <label for="cardNumber">Card number</label>
+        <input type="text" id="=cardNumber" placeholder="XXXX-XXXX-XXXX-XXXX">
+
+        <div class="expDate">
           <div>
-            <h3 class="checkout_heading">
-              The Legend of Zelda: Tears of the Kingdom
-            </h3>
-            <p>Type: Digital</p>
+            <label for="expMonth">Expired month</label>
+            <input type="text" id="=expMonth" placeholder="XX">
           </div>
 
           <div>
-            <span>CAD $89.99</span>
-            <span>X1</span>
-            <span>CAD $89.99</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="cart">
-        <div class="cart-image">
-          <img src="https://assets-prd.ignimgs.com/2022/06/14/zelda-breath-of-the-wild-1655249167687.jpg"
-            alt="The Legend of Zelda: Breath of the Wild" />
-        </div>
-        <div class="cart-info">
-          <div>
-            <h3 class="checkout_heading">
-              The Legend of Zelda: Breath of the Wild
-            </h3>
-            <p>Type: Digital</p>
+            <label for="expYear">Expired year</label>
+            <input type="text" id="=expYear" placeholder="20XX">
           </div>
 
-          <div>
-            <span>CAD $79.99</span>
-            <span>X1</span>
-            <span>CAD $79.99</span>
-          </div>
         </div>
+
+        <label for="cvv">CVV</label>
+        <input type="text" id="=cvv" placeholder="XXX">
+
+
+
+
+
       </div>
 
-      <div class="cart">
-        <div class="cart-price">
-          <span><strong>Total</strong></span>
-          <span><strong>CAD $169.98</strong></span>
-        </div>
-      </div>
-      <div class="cart">
-        <div class="cart-check">
-          <form action="payment.html">
-            <input type="submit" value="Check out" />
-          </form>
-        </div>
-      </div>
+      <input type="submit" value="Check Out">
+
+      <input type="Submit" value="Reset">
+
     </div>
+
+
   </section>
-  <script src="./js/hamburger.js"></script>
+
 </body>
+
 <footer class="footer">
   <div class="container">
     <div class="row">
@@ -165,7 +183,10 @@
         </div>
 
       </div>
+
+
     </div>
+
   </div>
 </footer>
 
