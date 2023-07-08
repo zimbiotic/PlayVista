@@ -19,6 +19,10 @@
     position: relative;
 }
 
+video::-webkit-media-controls-timeline {
+    display: none;
+}
+
 .hero.floating{
     z-index: 1;
 }

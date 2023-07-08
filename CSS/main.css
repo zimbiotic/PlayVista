@@ -339,10 +339,8 @@ input[type="text"]:focus {
     backdrop-filter: blur(10px);
     transition: left ease-in-out 0.25s;
     z-index: 1;
-   
-  
-
 }
+
 .menu_container1 a{
     position: sticky;
     top: 0;
@@ -479,43 +477,66 @@ input[type="text"]:focus {
   .container {  
     max-width: 1170px;
     margin: auto;
-  }
+}
 
   footer ul{
     list-style:none;
-    
-  }
-  .social-links a i
-  {
+}
+
+  .social-links a i{
     margin-right: 50px;
    
-  }
-  .container
-  {
+}
+
+
+.container{
     height: 130px;
-  }
-  .row
-  {
+}
+
+.row{
     
+
   }
 
-  .cart-bgcolor {
-    width: 40%;
+  .element-list {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-top-width: 0.15rem;
+    border-top-style: solid;
+    border-top-color: black;
+  
+  
+  }
+  
+  .element-list li {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  /* check out cart section------- */
+
+
+.cart-bgcolor {
+    max-width: 1000px;
     background-color: #dddddd;
     padding: 1rem;
+    margin: auto;
   }
   
   .cart {
   
     background-color: rgba(185, 183, 189, 0.317);
     display: flex;
-    max-width: 100%;
+    
     min-width: fit-content;
     gap: 2rem;
     margin-top: 1rem;
     padding: 1rem;
   
+  
   }
+  
+  
   
   .cart-info {
     overflow: scroll;
@@ -543,6 +564,7 @@ input[type="text"]:focus {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+   
   }
   
   .checkout_heading {
@@ -588,7 +610,6 @@ input[type="text"]:focus {
     padding-right: 30px;
   
   }
-  
   /* font------- */
   
   .text {
@@ -597,6 +618,59 @@ input[type="text"]:focus {
   
     flex-wrap: wrap;
   }
+
+  .payment {
+    max-width: 50rem;
+    background-color: #dddddd;
+    padding: 1rem;
+    margin: auto;
+  }
   
+  .payment h2 {
+    margin-top: 1rem;
+  
+  }
+  
+  .payment label {
+  
+    display: block;
+  }
+  
+  .payment input {
+  
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    margin-bottom: 1.3rem;
+  }
+  
+  /* payment method section */
+  
+  .payment_method label {
+    display: inline;
+    margin-right: 1rem;
+  }
+  
+  .payment_method input {
+    width: 20px;
+  }
+  
+  .expDate {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .expDate>div {
+    flex: 1;
+  }
+  
+  .expDate input {
+    width: 100%;
+  }
+  
+
+
+
   
   
