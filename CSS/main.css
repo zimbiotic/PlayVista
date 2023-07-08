@@ -498,5 +498,105 @@ input[type="text"]:focus {
   {
     
   }
+
+  .cart-bgcolor {
+    width: 40%;
+    background-color: #dddddd;
+    padding: 1rem;
+  }
+  
+  .cart {
+  
+    background-color: rgba(185, 183, 189, 0.317);
+    display: flex;
+    max-width: 100%;
+    min-width: fit-content;
+    gap: 2rem;
+    margin-top: 1rem;
+    padding: 1rem;
+  
+  }
+  
+  .cart-info {
+    overflow: scroll;
+  }
+  
+  
+  
+  
+  @media screen and (max-width:500px) {
+    .cart {
+      flex-direction: column;
+    }
+  }
+  
+  
+  
+  .cart-image {
+    width: 40%;
+    min-width: 50%;
+  
+  }
+  
+  .cart-info {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .checkout_heading {
+    font-family: "Rajdhani";
+  }
+  
+  
+  
+  .cart-price {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cart-info div:nth-last-of-type(1) {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cart input {
+  
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    margin-bottom: 1.3rem;
+    margin-top: 1rem;
+  
+  }
+  
+  .total {
+    max-width: 50rem;
+    margin-top: 30px;
+    display: flex;
+    padding-right: 30px;
+  }
+  
+  .total p {
+  
+    padding-right: 30px;
+  
+  }
+  
+  /* font------- */
+  
+  .text {
+    display: flex;
+    justify-content: space-around;
+  
+    flex-wrap: wrap;
+  }
+  
   
   
